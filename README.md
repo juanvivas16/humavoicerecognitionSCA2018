@@ -1,2 +1,2 @@
-# placerecognitionSCA2018
-Recognition of places using machine learning techniques.
+# Huma Voice Recognition SCA2018
+Recognition of human voice using machine learning techniques.
