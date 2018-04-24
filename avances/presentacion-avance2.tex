@@ -1,0 +1,82 @@
+\documentclass[12pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[document]{ragged2e}
+\usetheme{Madrid}
+\begin{document}
+  \author{Juan Andr\'es Vivas}
+  \title{Reconocimiento de voz humana a partir de un archivo de audio}
+  \subtitle{Datos a usar y como capturarlos}
+  %\logo{}
+  %\institute{}
+  %\date{}
+  %\subject{}
+  %\setbeamercovered{transparent}
+  %\setbeamertemplate{navigation symbols}{}
+  \begin{frame}[plain]
+  \maketitle
+\end{frame}
+
+\begin{frame}
+\frametitle{Datos a utilizar}
+\justify{El conjunto de datos a utilizar serán archivos de audio con una duración de 2 segundos, formato WAV a una frecuencia de 44100 Hz.}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Cantidad total requerida de datos}
+
+\justify{La cantidad total aproximada de datos requeridos será de 1000 muestras, la cual se comprenderá en un 60\% de voz y un 40\% de ruidos diferentes a la voz humana entendible.}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Cantidad de datos capturados}
+
+\justify{La cantidad de datos capturados hasta el momento es de 35 muestras con ruido y 200 muestras de voz.}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Consideraciones para capturar los datos}
+
+\justify{
+
+\begin{enumerate}
+	\item Los datos de voz se capturan con un micrófono que aislé en la medida de lo posible el ruido externo.
+	
+	\item El ruido es capturado con un micrófono de celular.
+	
+	\item La duración de los archivos es variable, luego sera dividida a segmentos de 2 segundos y convertida al formato requerido.
+	
+	\item Se tomara como datos de ruido los habituales dentro de un salón o laboratorio, los cuales pueden ser murmullos, teclados de computadora, silencios, pasos, etc.
+
+\end{enumerate}
+
+}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Pasos detallados para capturar los datos }
+\justify{
+	
+	\begin{enumerate}
+		\item Archivos de voz utilizados en los proyectos de Alvaro y Nerio.
+		
+		\item Se captura la voz usando un audífono con micrófono y un programa de grabación hecho en python.
+		
+		\item El ruido es capturado haciendo grabaciones con el micrófono del celular dentro del ambiente controlado, tratando de reproducir los sonidos deseados.
+		
+		
+	\end{enumerate}
+	
+}
+
+\end{frame}
+
+\end{document}

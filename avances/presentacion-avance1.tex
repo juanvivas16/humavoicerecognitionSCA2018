@@ -1,0 +1,93 @@
+\documentclass[12pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usetheme{Madrid}
+\begin{document}
+  \author{Juan Andr\'es Vivas}
+  \title{Reconocimiento de lugares usando imágenes con técnicas de aprendizaje automático}
+  \subtitle{Utilizando redes neuronales convolucionales.}
+  %\logo{}
+  %\institute{}
+  %\date{}
+  %\subject{}
+  %\setbeamercovered{transparent}
+  %\setbeamertemplate{navigation symbols}{}
+  \begin{frame}[plain]
+  \maketitle
+\end{frame}
+
+\begin{frame}
+\frametitle{Objetivo}
+
+Reconocer el lugar donde se encuentra el robot para luego ser utilizado con diferentes intenciones, como por ejemplo moverse, sentir una emoción, etc.
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Antecedente}
+
+\textit{Light-weight Visual Place Recognition Using Convolutional Neural Network for Mobile Robots}
+
+\begin{itemize}
+	\item Chanjong Park, Junik Jang, Lei Zhang, and Jae-Il Jung.
+	\item Software R\&D Center, Samsung Electronics Co., Ltd., Seoul, Republic of Korea.
+	
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Propuesta }
+
+Se propone construir un componente para un robot social el cual pueda determinar el lugar donde se encuentra ubicado. A partir del mismo poder reconocer si estuvo anteriormente ahí o es un lugar nuevo y así poder sentir alguna emoción respecto al sitio o moverse sin problemas en el mismo.
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Alcance }
+
+Construir un componente el cual pueda reconocer el lugar donde se encuentra el robot.
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Redes Neuronales Convolucionales}
+
+Este tipo de red es una variación de un perceptron multicapa, sin embargo, debido a que su aplicación es realizada en matrices bidimensionales, son muy efectivas para tareas de visión artificial, como en la clasificación y segmentación de imágenes, entre otras aplicaciones.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\linewidth]{imagenes/avance1-1}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Entrenamiento y Verificación}
+
+Para el entrenamiento y verificación se hará uso de un conjunto de datos llamado KTH-IDOL2, el cual contiene pasillos, oficinas y salones. \\
+
+Luego se probara con un conjunto de datos tomado de las áreas de la facultad como por ejemplo, salones de clase, laboratorios y pasillos.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\linewidth]{imagenes/avance1-2}
+\end{figure}
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Robótica Social }
+
+Las personas pueden sentir cierto tipo de emociones de acuerdo al lugar donde se encuentren, en este contexto es importante reconocer el lugar donde un robot se encuentre para lograr expresar alguna emoción relacionada.
+
+\end{frame}
+
+
+\end{document}
